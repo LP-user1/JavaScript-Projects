@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product slider | 10</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="card-img">
+      <div class="img-show">
+        <img src="img/mobile1.jpg" alt="">
+        <!-- <img src="img/mobile2.jpg" alt="">
+        <img src="img/mobile3.jpg" alt=""> -->
+        <img src="img/mobile4.jpg" alt="">
+      </div>
+      <div class="img-anchor-link">
+        <div class="img active"><a href="#" data-img-id="1"><img src="img/mobile1.jpg" alt=""></a></div>
+        <!-- <div class="img"><a href="#" data-img-id="2"><img src="img/mobile2.jpg" alt=""></a></div>
+        <div class="img"><a href="#" data-img-id="3"><img src="img/mobile3.jpg" alt=""></a></div> -->
+        <div class="img"><a href="#" data-img-id="2"><img src="img/mobile4.jpg" alt=""></a></div>
+      </div>
+    </div>
+    <div class="card-details">
+      <h2>Mobile Product</h2>
+      <h3>$59 <span> $89 </span></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id quia molestias consequuntur nulla sed ut deleniti? At quos asperiores nobis ut voluptate ratione? Magnam veritatis nihil velit fuga dolorum.</p>
+      <div class="form">
+        <div class="form-grp">
+          <label for="">Color</label>
+          <select id="">
+            <option value="">Blue</option>
+            <option value="">Black</option>
+          </select>
+        </div>
+        <div class="form-grp">
+          <label for="">Quantity</label>
+          <div class="input-grp">
+            <button id="minus">-</button>
+            <input type="text" value="1" id="qty">
+            <button id="plus">+</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn">Add Cart</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

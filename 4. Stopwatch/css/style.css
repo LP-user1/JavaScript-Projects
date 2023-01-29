@@ -1,0 +1,123 @@
+/********** Google-Poppins *********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/********** Global Reset *********/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+/********** Colors *********/
+:root{
+  --yellow-green:#849b5c;
+  --light-yellow-green:#bfffc7;
+  --mid-black:#0f0e12d9;
+  --dark-blue:#192630;
+  --purple:#58126a;
+  --light-purple-green:#8a5f71;
+  --light-pink:#f6b2e1;
+  --petrol-blue:#07a3b2;
+  --light-lime-white:#d9ecc7;
+  --color-1:#ff9a9e;
+  --color-2:#fad0c4;
+  --white-1:#fdfbfb;
+  --white-2:#ebedee;
+}
+
+/********** Digital Font *********/
+@font-face {
+  font-family: 'Digital-7';
+  src: url('digital-7.ttf');
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #58126a;
+}
+
+.frame {
+  width: 18rem;
+  height: 18rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+h2{
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+.watch{
+  width: 15rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  font-size: 2rem;
+}
+.hrs,.min,.sec,.ms,.colon{
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-family: 'Digital-7';
+}
+.colon{
+  width: 1rem;
+}
+.buttons{
+  width: 16rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+}
+.buttons button{
+  display: inline-block;
+  padding: .4rem .6rem;
+  color: var(--white-2);
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  font-size: .7rem;
+  cursor: pointer;
+}
+.start{background-color: var(--petrol-blue);}
+.pause{background-color: var(--color-2);color: var(--dark-blue) !important;}
+.reset{background-color: var(--color-1);color: var(--dark-blue) !important;}
+
+.active-btn{
+  pointer-events: none;
+  opacity: 0.5;
+  box-shadow: 0 0 .2rem var(--dark-blue);
+}
+
+.frameAnimate{
+  color: rgb(255, 0, 0);
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: frameAnimate 1500ms infinite ;
+}
+@keyframes frameAnimate {
+  0% {
+    box-shadow:0 0 0 0 #fcfcfc;
+  }
+
+  75% {
+    box-shadow: #fcfcfc17 0 0 0 2rem;
+  } 
+}

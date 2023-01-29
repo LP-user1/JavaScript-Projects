@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.container{
+  width: 25rem;
+  height: 22rem;
+  background: -webkit-gradient(linear,left bottom,right top,from(rgb(250, 139, 158)),to(rgb(148, 191, 255)));
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+.container form{
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: .8rem;
+}
+.form-grp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+label{
+  font-size: 1.1rem;
+}
+#pwdLength{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  height: 1.7rem;
+  width: 20%;
+}
+input,button{
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+}
+button#btnCpy{
+  padding: .3rem 1rem;
+  border-radius: .5rem;
+  background-color: rgb(254, 78, 201);
+  color: white;
+}
+button#btnCpy:hover{
+  background-color: rgb(191, 71, 255);
+  color: #000;
+}
+button#btnSub{
+  padding: .5rem 2rem;
+  border-radius: .5rem;
+  background-color: rgb(91, 7, 91);
+  color: azure;
+}
+button#btnSub:hover{
+  background-color: rgb(91, 7, 91,.7);
+}
+input#num,
+input#sm,
+input#caps,
+input#sym{
+  width: 1rem;
+  height: 1rem;
+}
+input:checked{
+  width: 1rem;
+  height: 1rem;
+  accent-color: rgb(255, 68, 152);
+}
+#pwdVal{
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.cpy{
+  margin-top: 1rem;margin-bottom: 1rem;
+  justify-content: space-evenly;  
+}
+.pwd{
+  margin: 0 auto;
+}

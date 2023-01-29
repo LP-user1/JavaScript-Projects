@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code generator | 13</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-div">
+        <form action="#" id="frm">
+          <div class="form-grp">
+            <label for="urlIn">Enter Your Link</label>
+            <input type="url" id="urlIn" placeholder="Enter URL" required />
+          </div>
+          <div class="form-grp">
+            <label for="size">Select Size</label>
+            <select id="size">
+              <option value="100">100 X 100</option>
+              <option value="200">200 X 200</option>
+              <option value="300">300 X 300</option>
+              <option value="400">400 X 400</option>
+            </select>
+          </div>
+          <div class="form-grp-1">
+            <label for="dark" class="dark">Color Dark</label>
+            <input type="color" id="dark" value="#000000" />
+          </div>
+          <div class="form-grp-1">
+            <label for="light" class="light">Color Light</label>
+            <input type="color" id="light" value="#ffffff" />
+          </div>
+          <div class="form-grp-1">
+            <button type="submit" title="Submit your request">
+              Generate QR Code
+            </button>
+            <a
+              href="#"
+              title="save your QR"
+              class="btn event-none"
+              download="QR-code"
+              >Save QR</a
+            >
+          </div>
+        </form>
+      </div>
+      <div class="output-div">
+        <div id="qrcode"></div>
+        <div class="loading">
+          <div class="spinner"></div>
+          <p>Please Wait</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

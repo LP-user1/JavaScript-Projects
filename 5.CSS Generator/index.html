@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- External css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Style output container -->
+    <div class="style_con"></div>
+    <!-- Tool Container -->
+    <div class="tool_con">
+      <div class="input-group">
+        <div class="item">
+          <label for="rad">All Radius</label>
+          <span id="rad_val"></span>
+        </div>
+        <input type="range" value="" min="1" max="100" id="rad">
+      </div>
+      <div class="input-group">
+        <div class="item">
+          <label for="bor">Border Size</label>
+          <span id="bor_val"></span>
+        </div>
+        <input type="range" value="" min="1" max="20" id="bor">
+      </div>
+      <div class="input-group">
+        <div class="item">
+          <label for="borStyle">Border Style</label>
+          <select id="borStyle">
+            <option>solid</option>
+            <option>none</option>
+            <option>dashed</option>
+            <option>double</option>
+            <option>groove</option>
+            <option>ridge</option>
+            <option>inset</option>
+            <option>outset</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="item">
+          <label for="borColor">Border Color</label>
+          <input type="color" oninput="getColVal()" onclick="getColVal()" onchange="getColVal()" value="" id="borColor">
+        </div>
+      </div>
+      <div class="input-group">
+        <textarea id="code"></textarea>
+      </div>
+      <button id="btnCpy">Copy</button>
+    </div>
+  </div>
+
+  <!-- External Js -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+

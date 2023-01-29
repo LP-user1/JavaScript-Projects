@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgb(0 0 0 / 86%),rgb(24 23 23 / 36%)),url('../Img/milad-fakurian-wNsHBf_bTBo-unsplash.jpg');
+  color: #fb99c1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin-top: -3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+p {
+  margin-top: 1.5rem;
+  font-size: .7rem;
+
+}
+
+div.counter {
+  margin-top: 3rem;
+  display: flex;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  border-radius: .2rem;
+  gap: .1rem;
+  transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.box {
+  width: 4rem;
+  height: 4rem;
+  margin-top: .7rem;
+}
+
+.box h2{
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: -1rem;
+}
+.box small{
+  margin-top: -1rem;
+  font-size: .6rem;
+  font-weight: 100;
+}
+span{
+  margin-top: 1.3rem;
+  font-size: 1.4rem;
+}
+
+.input {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1.5rem;
+  height: 2rem;
+}
+.input input{
+  background-color: inherit;
+  width: 10rem;
+  height: 2rem;
+  padding-left: 1.5rem;
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.464);
+  border-radius: 3rem;
+  border-width: .1rem;
+  color: rgba(255, 255, 255, 0.938);
+  transition: all .5s cubic-bezier(0.38, 0.68, 0.58, 1);
+}
+.input input:focus{
+  box-shadow: rgba(255, 255, 255, 0.464) 0 0 5px;
+}
+.input input::placeholder{
+  /*color:rgba(255, 255, 255, 0.926);*/
+  color:#eb86afe8;
+  padding-left: .5rem;
+  font-size: .7rem;
+}
+.input button{
+  background-color: rgb(14 14 14 / 60%);
+  color: #ee73b5;
+  width: 5rem;
+  height: 2.2rem;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  border-width: .1rem;
+  font-size: .7rem;
+  transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.input button:hover{
+  background-color: rgb(122 122 122 / 48%);
+  color: rgba(255, 255, 255, 0.778);
+}
+.input button:active{
+  background-color: rgba(73, 75, 123, 0.848);
+  color: rgba(255, 255, 255, 0.487);
+  box-shadow: rgba(255, 255, 255, 0.464) 0 0 5px;
+}
+@media (min-width:576px){
+  .title {
+    font-size: 2.2rem;
+  }
+  p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .counter {
+    margin-top: 4rem;
+    padding: .8rem;
+  }
+  .box {
+    width: 5.8rem;
+    height: 5.4rem;
+    margin-top: .4rem;
+  }
+  
+  .box h2{
+    font-size: 2.8rem;
+    
+  }
+  .box small{
+    font-size: .6rem;
+  }
+  span{
+    margin-top: 2.2rem;
+    font-size: 1.6rem;
+  }
+  .input {
+    margin-top: 5rem;
+    height: 2.2rem;
+  }
+  .input input{
+    width: 18rem;
+  }
+  .input button {
+    width: 7rem;
+  }
+}
+
+@media (min-width:768px){
+  .title {
+    font-size: 3rem;
+  }
+  p {
+    margin-top: 1.8rem;
+    font-size: 1.1rem;
+  }
+  .counter {
+    margin-top: 5rem;
+  }
+  .box {
+    width: 8rem;
+    height: 6rem;
+    margin-top: .8rem;
+  }
+  
+  .box h2{
+    font-size: 3rem;
+  }
+  .box small{
+    font-size: .7rem;
+  }
+  span{
+    margin-top: 2.2rem;
+    font-size: 2rem;
+  }
+  .input input{
+    width: 20rem;
+  }
+  .input button {
+    width: 8rem;
+  }
+}
+

@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+body{
+  width: 100%;
+  background-color: rgba(74, 72, 79, 0.938);
+  padding: 1rem;
+}
+
+.controller{
+  max-width: 1200px;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.controller .btn-grp .btn{
+  padding: .2rem .5rem;
+  background-color: rgb(255, 217, 151);
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+  border: .1rem solid rgb(255, 217, 151);
+  transition: .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.controller .btn-grp .btn:hover,
+.controller .btn-grp .btn-clicked{
+  background-color: rgba(74, 72, 79, 0.938);
+  color: rgb(255, 217, 151);
+}
+
+.controller #search{
+  padding: .2rem .7rem;
+  background-color: rgba(255, 255, 255, 0.923);
+  max-width: 15rem;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  transition:all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.controller input::placeholder{
+  padding-left: .15rem;
+}
+
+.container{
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+  gap: .6rem;
+  margin: 0 auto;
+}
+
+.container .box{
+  height: 8rem;
+  border: .5rem groove rgb(255, 228, 196);
+  overflow: hidden;
+}
+
+.container .box img{
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+  transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform-origin: top;
+}
+
+.container .box img:hover{
+  transform: scale(1.2);
+}

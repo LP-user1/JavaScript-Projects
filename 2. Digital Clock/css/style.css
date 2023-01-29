@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --yellow-green:#849b5c;
+  --light-yellow-green:#bfffc7;
+  --black:#0f0e12d9;
+  --dark-blue:#192630;
+  --purple:#58126a;
+  --light-purple-green:#8a5f71;
+  --light-pink:#f6b2e1;
+  --petrol-blue:#07a3b2;
+  --light-lime-white:#d9ecc7;
+}
+@font-face {
+  font-family: digital-7;
+  src: url('digital-7.ttf');
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear,left top,right bottom,from(var(--petrol-blue)),to(var(--light-lime-white)));
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+h2{
+  font-weight: 300;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.948);
+}
+h2 span{
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--dark-blue);
+}
+div.none{
+  display: none;
+}
+.btn{
+  margin-top: 2rem;
+  gap: 1rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: var(--dark-blue);
+  color: var(--light-lime-white);
+  width: 6rem;
+  height: 2rem;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+button.active{
+  box-shadow: 0 .5rem 1.5rem #d9ecc7;
+}
+.frame{
+  margin-top: 8rem;
+  width: 20rem;
+  height: 6rem;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear,left top,right bottom,from(var(--black)),to(var(--dark-blue)));
+  padding: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  line-height: 4rem;
+  position: relative;
+}
+.clock div{
+  font-family: digital-7;
+  font-size: 1.9rem;
+  text-align: center;
+  width: 2rem;
+  color: var(--light-lime-white);
+}
+.clock .txt{
+  opacity: 1;
+}
+.clock .h::before,
+.m::before,.s::before{
+  content: '8';
+  position: absolute;
+  color: rgba(240, 248, 255, 0.679);
+  opacity: 0.2;
+  
+}
+
+@media (min-width:576px){
+  h2,h2 span{
+    font-size: 4rem;
+  }
+  span{
+    text-shadow: .2rem 0 .3rem var(--dark-blue);
+  }
+  .btn{
+    gap: 3rem;
+    width: 30rem;
+  }
+  button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+  }
+  .frame{
+    margin-top: 5rem;
+    width: 30rem;
+    height: 10rem;
+  }
+  .clock{
+    gap: .6rem;
+    line-height: 8rem;
+  }
+  .clock div{
+    font-size: 4.5rem;
+  }
+  .clock .h::before,
+  .m::before,.s::before{
+    opacity: 0.1;
+  }
+}
+
+@media (min-width:768px){
+  h2,h2 span{
+    font-size: 5rem;
+  }
+  span{
+    text-shadow: .2rem 0 .3rem var(--dark-blue);
+  }
+  .btn{
+    gap: 3rem;
+    width: 30rem;
+  }
+  button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+  }
+  .frame{
+    margin-top: 5rem;
+    width: 40rem;
+    height: 12rem;
+    padding: 1rem;
+  }
+  .clock{
+    gap: 1.5rem;
+    line-height: 10rem;
+  }
+  .clock div{
+    font-size: 6rem;
+  }
+  .clock .h::before,
+  .m::before,.s::before{
+    opacity: 0.1;
+  }
+}

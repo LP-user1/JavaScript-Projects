@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator | 8</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <div class="container">
+    <form action="#" id="frm">
+      <div class="form-grp">
+        <label for="pwdLength">Password Length</label>
+        <input id="pwdLength" type="number" min="8" value="8">
+      </div>
+
+      <div class="form-grp">
+        <label for="num">Number</label>
+        <input type="checkbox" checked id="num">
+      </div>
+
+      <div class="form-grp">
+        <label for="sm">Lower case</label>
+        <input type="checkbox"  id="sm">
+      </div>
+
+      <div class="form-grp">
+        <label for="caps">Upper case</label>
+        <input type="checkbox"  id="caps">
+      </div>
+
+      <div class="form-grp">
+        <label for="sym">Symbol</label>
+        <input type="checkbox"  id="sym">
+      </div>
+
+      <div class="form-grp cpy">
+        <input type="text" id="pwdVal">
+        <button type="button" id="btnCpy">Copy</button>
+      </div>
+
+      <div class="form-grp pwd">
+        <button type="submit" id="btnSub">Generate Password</button>
+      </div>
+
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
